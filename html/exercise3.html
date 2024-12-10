@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Schedule and Registration</title>
+</head>
+<body>
+  <h1>Event Schedule</h1>
+
+  <table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Event Name</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 AM</td>
+        <td>Opening Ceremony</td>
+        <td>Main Hall</td>
+      </tr>
+      <tr>
+        <td>10:00 AM</td>
+        <td>Workshop: Brewing Coffee</td>
+        <td>Room A</td>
+      </tr>
+      <tr>
+        <td>11:30 AM</td>
+        <td>Workshop: Playing Guitar</td>
+        <td>Room B</td>
+      </tr>
+      <tr>
+        <td>1:00 PM</td>
+        <td>Chess Tournament</td>
+        <td>Room C</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Register for the Event</h2>
+  <form action="#" method="post">
+    <label for="name">Name:</label><br/>
+    <input type="text" id="name" name="name"/><br/><br/>
+
+    <label for="email">Email:</label><br/>
+    <input type="text" id="email" name="email"/><br/><br/>
+
+    <label>Select Workshop:</label><br/><br/>
+    <input type="checkbox" id="coffee" name="coffe">
+    <label for="coffee">Chess Workshop</label><br/>
+    <input type="checkbox" id="coffee" name="coffe">
+    <label for="coffee">Coffee Workshop</label><br/>
+    <input type="checkbox" id="coffee" name="coffe">
+    <label for="coffee">Guitar Workshop</label><br/><br/>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

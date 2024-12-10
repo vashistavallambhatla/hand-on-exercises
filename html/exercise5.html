@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Schedule and Registration</title>
+</head>
+<body>
+  <h1 role="heading" aria-level="1">Event Schedule</h1>
+
+  <table role="table">
+    <thead>
+      <tr role="row">
+        <th role="columnheader">Time</th>
+        <th role="columnheader">Event Name</th>
+        <th role="columnheader">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr role="row">
+        <td>9:00 AM</td>
+        <td>Opening Ceremony</td>
+        <td>Main Hall</td>
+      </tr>
+      <tr role="row">
+        <td>10:00 AM</td>
+        <td>Workshop: Brewing Coffee</td>
+        <td>Room A</td>
+      </tr>
+      <tr role="row">
+        <td>11:30 AM</td>
+        <td>Workshop: Playing Guitar</td>
+        <td>Room B</td>
+      </tr>
+      <tr role="row">
+        <td>1:00 PM</td>
+        <td>Chess Tournament</td>
+        <td>Room C</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 role="heading" aria-level="2">Register for the Event</h2>
+  <form role="form" action="#" method="post">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" aria-required="true" /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" aria-required="true" /><br /><br />
+
+    <fieldset>
+      <legend>Select Workshop:</legend><br />
+      <input type="checkbox" id="chess-workshop" name="workshop" value="chess">
+      <label for="chess-workshop">Chess Workshop</label><br />
+      
+      <input type="checkbox" id="coffee-workshop" name="workshop" value="coffee">
+      <label for="coffee-workshop">Coffee Workshop</label><br />
+      
+      <input type="checkbox" id="guitar-workshop" name="workshop" value="guitar">
+      <label for="guitar-workshop">Guitar Workshop</label><br />
+    </fieldset><br />
+
+    <button type="submit" aria-label="Register for selected events">Register</button>
+  </form>
+
+  <div aria-live="polite" id="confirmation-message" style="display:none;">
+    Registration successful! We'll send an email with event details.
+  </div>
+</body>
+</html>
